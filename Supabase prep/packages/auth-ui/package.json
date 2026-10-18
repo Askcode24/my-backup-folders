@@ -1,0 +1,17 @@
+{
+  "name": "@swiftroute/auth-ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./Login": "./src/pages/Login.tsx",
+    "./Register": "./src/pages/Register.tsx",
+    "./DriverPending": "./src/pages/DriverPending.tsx"
+  },
+  "dependencies": {
+    "@swiftroute/core": "*",
+    "lucide-react": "^1.55.0",
+    "react": "^19.0.0",
+    "react-router-dom": "^7.18.4"
+  }
+}

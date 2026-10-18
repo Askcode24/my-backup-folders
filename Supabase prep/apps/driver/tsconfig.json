@@ -1,0 +1,4 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src", "../../packages/core/src", "../../packages/design-system/src", "../../packages/auth-ui/src"]
+}

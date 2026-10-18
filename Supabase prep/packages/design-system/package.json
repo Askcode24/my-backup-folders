@@ -1,0 +1,18 @@
+{
+  "name": "@swiftroute/design-system",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./styles.css": "./src/styles.css",
+    "./Button": "./src/Button.tsx",
+    "./DashboardLayout": "./src/DashboardLayout.tsx",
+    "./ProtectedRoute": "./src/ProtectedRoute.tsx"
+  },
+  "dependencies": {
+    "@swiftroute/core": "*",
+    "lucide-react": "^1.55.0",
+    "react": "^19.0.0",
+    "react-router-dom": "^7.18.4"
+  }
+}

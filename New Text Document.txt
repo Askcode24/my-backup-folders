@@ -1,0 +1,27 @@
+Ahhh *nvm* = *Node Version Manager* 😂 My bad, I thought you meant "nevermind"
+
+### *What is nvm?*
+Lets you install + switch between different Node.js versions on the same PC. Super useful if one project needs Node 18 and another needs Node 20.
+
+### *Install nvm on Windows:*
+
+*1. Direct download link:*  
+https://github.com/coreybutler/nvm-windows/releases
+
+Grab `nvm-setup.exe` from the latest release → install it.
+
+*2. Check if it worked:*  
+Open CMD and type:
+nvm version
+### *Basic nvm commands:*
+nvm install 20.11.0     - Install Node v20.11.0
+nvm install latest      - Install newest Node
+nvm list                - See all versions you have
+nvm use 18.19.0         - Switch to Node 18.19.0
+node -v                 - Check current Node version
+### *For Mac/Linux:*
+Different nvm. Install with:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+*Heads up*: Close and reopen CMD after installing nvm or it won’t work.
+
+You trying to install a specific Node version for a project?

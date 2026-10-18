@@ -1,0 +1,38 @@
+{
+  "name": "swiftroute",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @swiftroute/customer",
+    "dev:customer": "npm run dev --workspace @swiftroute/customer",
+    "dev:driver": "npm run dev --workspace @swiftroute/driver",
+    "dev:admin": "npm run dev --workspace @swiftroute/admin",
+    "build": "npm run build:customer && npm run build:driver && npm run build:admin",
+    "build:customer": "npm run build --workspace @swiftroute/customer",
+    "build:driver": "npm run build --workspace @swiftroute/driver",
+    "build:admin": "npm run build --workspace @swiftroute/admin",
+    "typecheck": "npm run typecheck --workspace @swiftroute/customer && npm run typecheck --workspace @swiftroute/driver && npm run typecheck --workspace @swiftroute/admin",
+    "preview": "npm run preview --workspace @swiftroute/customer"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
+    "lucide-react": "^1.55.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "latest",
+    "tailwindcss": "^4.3.3",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
